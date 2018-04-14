@@ -1,0 +1,17 @@
+Navigation Horizontal
+paddingBottom 10
+width 100%
+Button
+onClick <showProfile
+isActive <isProfile
+text Your Profile
+
+Button
+onClick <showYourFarm
+isActive <isYourFarm
+text Your Farm
+
+Button
+onClick <showCommunity
+isActive <isCommunity
+text Community

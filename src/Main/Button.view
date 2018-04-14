@@ -1,0 +1,15 @@
+Button Vertical
+paddingTop 10
+paddingBottom 10
+onClick <
+flexGrow 1
+alignItems center
+backgroundColor white
+when <isActive
+backgroundColor green
+Text
+fontSize 20
+text < Label
+color green
+when <isActive
+color white

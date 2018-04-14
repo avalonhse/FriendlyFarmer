@@ -1,0 +1,25 @@
+App Vertical
+flexGrow 1
+flexShrink 1
+flexBasis auto
+Vertical
+flexGrow 1
+flexShrink 1
+flexBasis auto
+Profile
+onWhen <isProfile
+
+YourFarm
+onWhen <isYourFarm
+
+Community
+onWhen <isCommunity
+
+Navigation
+paddingBottom 10
+isProfile <
+isYourFarm <
+isCommunity <
+showProfile <
+showYourFarm <
+showCommunity <
