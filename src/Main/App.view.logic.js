@@ -4,6 +4,8 @@ import fonts from '../fonts.js'
 import React from 'react'
 import App from './App.view.js'
 
+console.disableYellowBox = true
+
 export default class AppLogic extends React.Component {
   state = {
     isReady: false,
@@ -30,7 +32,6 @@ export default class AppLogic extends React.Component {
       isYourFarm: false,
       isCommunity: false,
       isPicture: false,
-
     })
   }
 
@@ -55,7 +56,6 @@ export default class AppLogic extends React.Component {
   }
 
   render() {
-
     if (!this.state.isReady) {
       return (
         <AppLoading
@@ -63,18 +63,19 @@ export default class AppLogic extends React.Component {
           onFinish={() => this.setState({ isReady: true })}
           onError={console.warn}
         />
-      );
-}
+      )
+    }
 
-    return <App {...this.props} {...this.state} 
-      showProfile={this.showProfile}
-      showYourFarm={this.showYourFarm}
-      showCommunity={this.showCommunity}
-
-      takePicture={this.takePicture}
-
+    return (
+      <App
+        {...this.props}
+        {...this.state}
+        showProfile={this.showProfile}
+        showYourFarm={this.showYourFarm}
+        showCommunity={this.showCommunity}
+        takePicture={this.takePicture}
       />
-    
+    )
   }
 
   _cacheResourcesAsync() {

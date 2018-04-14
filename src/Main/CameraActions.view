@@ -1,0 +1,22 @@
+CameraActions Horizontal
+Vertical
+backgroundColor rgba(255,255,255,0.5)
+paddingTop 25
+paddingRight 25
+paddingBottom 25
+paddingLeft 25
+onClick <go
+Text
+text GO
+
+
+Vertical
+backgroundColor rgba(255,255,255,0.5)
+marginLeft 25
+paddingTop 25
+paddingRight 25
+paddingBottom 25
+paddingLeft 25
+onClick <cancel
+Text
+text X

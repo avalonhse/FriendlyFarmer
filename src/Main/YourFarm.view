@@ -4,4 +4,18 @@ paddingBottom 10
 ProfileFake Image
 source ./img/YourFarm1.png
 
+Docs List
+from <docs
+Doc
+
+
+TakePhoto Vertical
+onClick <takePhoto
+Text
+text Take photo
+
+
 Camera
+onWhen <isTakingPhoto
+add <
+cancel <
