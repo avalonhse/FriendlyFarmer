@@ -1,3 +1,5 @@
 Doc Vertical
+marginLeft 5
 CameraImage
 source <doc
+isThumbnail true

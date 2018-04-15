@@ -6,6 +6,8 @@ source ./img/YourFarm1.png
 
 Docs List
 from <docs
+flexDirection row
+maxHeight 50%
 Doc
 
 

@@ -13,6 +13,7 @@ export default class AppLogic extends React.Component {
     isYourFarm: false,
     isCommunity: false,
     isPicture: false,
+    isShowingNavigation: true,
   }
 
   takePicture = () => {
@@ -55,6 +56,12 @@ export default class AppLogic extends React.Component {
     })
   }
 
+  toggleNavigation = () => {
+    this.setState({
+      isShowingNavigation: !this.state.isShowingNavigation
+    })
+  }
+
   render() {
     if (!this.state.isReady) {
       return (
@@ -74,6 +81,7 @@ export default class AppLogic extends React.Component {
         showYourFarm={this.showYourFarm}
         showCommunity={this.showCommunity}
         takePicture={this.takePicture}
+        toggleNavigation={this.toggleNavigation}
       />
     )
   }

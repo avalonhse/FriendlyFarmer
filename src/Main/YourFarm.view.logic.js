@@ -28,6 +28,12 @@ export default class YourFarmLogic extends React.Component {
     })
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.isTakingPhoto !== this.state.isTakingPhoto) {
+      this.props.toggleNavigation()
+    }
+  }
+
   render() {
     return (
       <YourFarm
